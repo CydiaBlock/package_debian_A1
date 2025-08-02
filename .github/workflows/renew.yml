@@ -1,6 +1,9 @@
 name: Scheduled GitHub Pages Redeploy
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 1 * *'
   workflow_dispatch:
